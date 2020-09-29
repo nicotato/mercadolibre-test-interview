@@ -1,0 +1,14 @@
+.container-component {
+  text-align: center;
+  .box-container-component {
+    display: inline-block;
+    text-align: initial;
+    vertical-align: middle;
+    width: 80%;
+  }
+  @media (max-width: 400px) {
+    .box-container-component {
+      width: 100%;
+    }
+  }
+}

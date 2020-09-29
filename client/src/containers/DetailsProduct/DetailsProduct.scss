@@ -1,0 +1,25 @@
+.product-detail-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 4px;
+  padding: 32px;
+  .product-detail-image {
+    flex-basis: 680px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .product-detail-info {
+    flex-basis: 300px;
+  }
+  .product-detail-description {
+    flex-grow: 1;
+    h2 {
+      font-size: 28px;
+      margin: 32px 0;
+    }
+  }
+}

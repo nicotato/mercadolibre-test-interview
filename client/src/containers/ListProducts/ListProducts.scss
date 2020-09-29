@@ -1,0 +1,9 @@
+@import "../../styles/colors.scss";
+.list-products-component {
+  background-color: $ml-color-white;
+  border-radius: 4px;
+  ul {
+    list-style: none;
+    padding: 0 16px;
+  }
+}

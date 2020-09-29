@@ -1,0 +1,21 @@
+.header-component {
+  display: block;
+  background-color: #ffe600;
+  // height: 57px;
+  .header-box-bound {
+    padding: 8px 0;
+    overflow: auto;
+    .header-box-logo {
+      width: 75px;
+      display: inline-block;
+      .header-logo {
+        vertical-align: middle;
+        height: 38px;
+      }
+    }
+    .header-search-box-header {
+      width: calc(100% - 75px);
+      display: inline-block;
+    }
+  }
+}

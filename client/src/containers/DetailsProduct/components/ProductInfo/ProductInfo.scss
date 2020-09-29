@@ -1,0 +1,33 @@
+.product-info-component {
+  font-weight: normal;
+  h4 {
+    color: #666;
+    margin-bottom: 16px;
+  }
+  h2 {
+    color: #333;
+    .free-shipping {
+      width: 18px;
+      margin-left: 5px;
+    }
+  }
+  .logo-shipping {
+    margin-left: 10px;
+  }
+  h1 {
+    color: #333;
+    font-size: 46px;
+    margin: 32px 0;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    background: #3483fa;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

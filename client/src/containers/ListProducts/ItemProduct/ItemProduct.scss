@@ -1,0 +1,63 @@
+@import "../../../styles/colors.scss";
+
+.item-product-component {
+  color: $ml-color-gray-500;
+  border-bottom: 1px solid $ml-color-gray-100;
+  &:last-child {
+    border-bottom: none;
+  }
+  padding: 16px 0;
+  a {
+    text-decoration: none;
+    color: $ml-color-gray-500;
+  }
+  a:active,
+  a:visited,
+  a:focus {
+    color: $ml-color-gray-500;
+  }
+  .content {
+    display: flex;
+    .picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      img {
+        max-height: 158px;
+        max-width: 158px;
+        width: 20vw;
+      }
+    }
+    .info {
+      flex-grow: 1;
+      position: relative;
+      padding: 30px 0;
+      .price {
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        h2 {
+          margin-right: 10px;
+        }
+      }
+      .description:first-letter {
+        text-transform: uppercase;
+      }
+      .city {
+        color: $ml-color-gray-400;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+      }
+      @media (max-width: 600px) {
+        .city {
+          color: $ml-color-gray-400;
+          position: absolute;
+          right: 20px;
+          top: 50px;
+        }
+      }
+    }
+  }
+}
