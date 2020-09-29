@@ -1,0 +1,26 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "package.json"
+  ],
+  "execMap": {
+    "js": "babel-node"
+  },
+  "events": {
+    "crash": "crash process"
+  },
+  "delay": "1500",
+  "watch": ["dist"],
+  "env": {
+    "DEBUG": "http, mercadolibre_test:server",
+    "NODE_ENV": "development",
+    "PORT": 5002,
+    "HOSTNAME": "localhost",
+    "MERCADO_LIBRE_API_URL": "https://api.mercadolibre.com",
+    "PUBLIC_URL": "/public"
+  },
+  "ext": "js"
+}
