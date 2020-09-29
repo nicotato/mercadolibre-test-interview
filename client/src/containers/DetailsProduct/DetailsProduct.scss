@@ -6,11 +6,17 @@
   border-radius: 4px;
   padding: 32px;
   .product-detail-image {
-    flex-basis: 680px;
+    flex-basis: 60%;
+    padding-right: 1%;
     img {
       width: 100%;
       height: auto;
     }
+  }
+  .principal-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
   .product-detail-info {
     flex-basis: 300px;

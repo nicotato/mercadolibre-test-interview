@@ -9,6 +9,7 @@ function App() {
     <div className="app-compontent">
       <Switch>
         <Route path="/" component={Home} />
+        <Route children="No Data" />
       </Switch>
     </div>
   );

@@ -7,15 +7,17 @@ const DetailsProduct = ({ item }) => {
     <div className="product-detail-component">
       {!!item && (
         <>
-          <div className="product-detail-image">
-            <img
-              src={item.picture}
-              alt={item.title}
-              loading="eager"
-            />
-          </div>
-          <div className="product-detail-info">
-            <ProductInfo item={item} />
+          <div className="principal-info">
+            <div className="product-detail-image">
+              <img
+                src={item.picture}
+                alt={item.title}
+                loading="eager"
+              />
+            </div>
+            <div className="product-detail-info">
+              <ProductInfo item={item} />
+            </div>
           </div>
           <div className="product-detail-description">
             <h2>Descripción del producto</h2>
