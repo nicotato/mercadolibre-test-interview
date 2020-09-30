@@ -9,7 +9,6 @@ import ItemDescriptionDTO from "../dto/itemDescriptionDTO";
 export async function getSearch(
   query = { search: "casa", limit: 4 }
 ) {
-  console.log(query);
   const arrPromise = await Promise.all([
     items.getCurrencies(),
     items.getSearchItems({
@@ -46,7 +45,6 @@ export async function getItem(id = "MLA771861154") {
     const categories = await items.getCategories(
       item.category_id
     );
-    console.log(categories);
     const author = new AuthorDTO({
       name: "Nicolás",
       lastname: "Tato",

@@ -10,7 +10,6 @@ const res = function (response) {
   return response.data;
 };
 instanceApiML.interceptors.request.use((value) => {
-  // console.log("REQUEST", value);
   return value;
 });
 instanceApiML.interceptors.response.use(res);

@@ -23,8 +23,6 @@ async function handleRequest(
   res,
   preloadedState = {}
 ) {
-  console.log("que dice", req.url, req.query);
-
   const context = {};
   const store = createStore(counterApp, preloadedState);
   const html = ReactDOMServer.renderToString(
@@ -52,7 +50,6 @@ async function handleRequest(
   }
 }
 router.get("/items", async (req, res) => {
-  console.log("ESTA /items");
   if (!req.query.search) res.redirect("/");
   try {
     const preloadState = {
@@ -68,7 +65,6 @@ router.get("/items", async (req, res) => {
 });
 
 router.get("/items/:id", async (req, res) => {
-  console.log("ESTA /:id");
   try {
     const preloadState = {
       items: await items.getItem(req.params.id),
@@ -80,7 +76,6 @@ router.get("/items/:id", async (req, res) => {
 });
 router.get("/", (req, res) => {
   try {
-    console.log("ESTA /");
     handleRequest(req, res);
   } catch (error) {
     console.log(error);

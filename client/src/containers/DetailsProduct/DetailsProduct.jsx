@@ -2,7 +2,6 @@ import React from "react";
 import ProductInfo from "./components/ProductInfo/ProductInfo";
 import "./DetailsProduct.scss";
 const DetailsProduct = ({ item }) => {
-  console.log(item);
   return (
     <div className="product-detail-component">
       {!!item && (

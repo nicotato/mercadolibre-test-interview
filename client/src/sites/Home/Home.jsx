@@ -14,7 +14,6 @@ function Home() {
     const result = await getSearchItems({
       search: value,
     });
-    console.log("result", result);
     setState({
       ...state,
       searchResult: result,
